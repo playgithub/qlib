@@ -250,7 +250,7 @@ class Rolling:
             r.generate()
         print(f"Your evaluation results can be found in the experiment named `{self.exp_name}`.")
 
-    def run(self, enable_data_handler_cache: Optional[bool] = True):
+    def run(self, enable_data_handler_cache: Optional[bool] = False):
         # the results will be  save in mlruns.
         # 1) each rolling task is saved in rolling_models
         self._train_rolling_tasks(enable_data_handler_cache)
